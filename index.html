@@ -25,36 +25,30 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="icon icon-tabler icons-tabler-filled icon-tabler-menu-2"
+              height="21"
+              viewBox="0 0 24 21"
+              fill="none"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M21 6a1 1 0 0 1 -1 1h-16a1 1 0 1 1 0 -2h16a1 1 0 0 1 1 1"
-              />
-              <path
-                d="M21 12a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1"
-              />
-              <path
-                d="M21 18a1 1 0 0 1 -1 1h-16a1 1 0 0 1 0 -2h16a1 1 0 0 1 1 1"
-              />
+              <rect width="24" height="3" fill="#9E9AA8" />
+              <rect y="9" width="24" height="3" fill="#9E9AA8" />
+              <rect y="18" width="24" height="3" fill="#9E9AA8" />
             </svg>
           </button>
         </div>
 
         <div class="menu" id="menu">
-          <ul>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Resources</li>
-          </ul>
-
-          <ul>
-            <li><a href="">Login</a></li>
-            <li><a href="">Sign Up</a></li>
-          </ul>
+          <div class="menu__content">
+            <ul class="menu__list">
+              <li><a class="menu__link" href="#">Features</a></li>
+              <li><a class="menu__link" href="#">Pricing</a></li>
+              <li><a class="menu__link" href="#">Resources</a></li>
+              <li><hr /></li>
+              <li><a class="menu__link" href="#">Login</a></li>
+            </ul>
+            <a class="btn btn--primary btn--rounded btn--sign" href=""
+              >Sign Up</a
+            >
+          </div>
         </div>
       </nav>
     </header>
@@ -83,7 +77,8 @@
       </section>
 
       <section class="shorter-links-section">
-        <form action="" class="shorter-links">
+        <form action="" class="shorter-links__form">
+          <img src="./images/bg-shorten-mobile.svg" alt="" />
           <input
             type="text"
             class="input"
@@ -94,6 +89,22 @@
       </section>
 
       <div class="stats-section__container">
+        <div class="link__container">
+          <article class="link__card">
+            <div class="link__content">
+              <div class="link__info">
+                <p class="old-link">https://www.frontendmentor.io</p>
+                <hr />
+                <p class="new-link">https://rel.ink/k4lKyk</p>
+              </div>
+
+              <button class="btn btn--primary btn--sm btn--squared">
+                Copy
+              </button>
+            </div>
+          </article>
+        </div>
+
         <section class="stats-section">
           <h2 class="title title--section">Advanced Statistics</h2>
           <p class="text text--section">
@@ -116,12 +127,14 @@
                       />
                     </svg>
                   </span>
-                  <h3 class="title title--card">Brand Recognition</h3>
-                  <p class="text text--card">
-                    Boost your brand recognition with each click. Generic links
-                    don’t mean a thing. Branded links help instil confidence in
-                    your content.
-                  </p>
+                  <div class="card__text">
+                    <h3 class="title title--card">Brand Recognition</h3>
+                    <p class="text text--card">
+                      Boost your brand recognition with each click. Generic
+                      links don’t mean a thing. Branded links help instil
+                      confidence in your content.
+                    </p>
+                  </div>
                 </div>
                 <div class="card__rectangle"></div>
               </div>
@@ -142,12 +155,14 @@
                       />
                     </svg>
                   </span>
-                  <h3 class="title title--card">Detailed Records</h3>
-                  <p class="text text--card">
-                    Gain insights into who is clicking your links. Knowing when
-                    and where people engage with your content helps inform
-                    better decisions.
-                  </p>
+                  <div class="card__text">
+                    <h3 class="title title--card">Detailed Records</h3>
+                    <p class="text text--card">
+                      Gain insights into who is clicking your links. Knowing
+                      when and where people engage with your content helps
+                      inform better decisions.
+                    </p>
+                  </div>
                 </div>
                 <div class="card__rectangle"></div>
               </div>
@@ -168,11 +183,14 @@
                       />
                     </svg>
                   </span>
-                  <h3 class="title title--card">Fully Customizable</h3>
-                  <p class="text text--card">
-                    Improve brand awareness and content discoverability through
-                    customizable links, supercharging audience engagement.
-                  </p>
+                  <div class="card__text">
+                    <h3 class="title title--card">Fully Customizable</h3>
+                    <p class="text text--card">
+                      Improve brand awareness and content discoverability
+                      through customizable links, supercharging audience
+                      engagement.
+                    </p>
+                  </div>
                 </div>
                 <div class="card__rectangle"></div>
               </div>
@@ -205,7 +223,7 @@
 
         <div class="footer__links">
           <div class="footer__column">
-            <ul>
+            <ul class="footer__list">
               <li><h4>Features</h4></li>
               <li><a href="#">Link Shortening</a></li>
               <li><a href="#">Branded Links</a></li>
@@ -214,7 +232,7 @@
           </div>
 
           <div class="footer__column">
-            <ul>
+            <ul class="footer__list">
               <li><h4>Resources</h4></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Developers</a></li>
@@ -223,7 +241,7 @@
           </div>
 
           <div class="footer__column">
-            <ul>
+            <ul class="footer__list">
               <li><h4>Company</h4></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Our Team</a></li>

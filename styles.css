@@ -604,7 +604,7 @@ hr {
 
 .link__content {
   display: flex;
-  width: 295px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: var(--spacing-200, 16px);

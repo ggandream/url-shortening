@@ -29,7 +29,8 @@
               height="21"
               viewBox="0 0 24 21"
               fill="none"
-            ><rect width="24" height="3" fill="#9E9AA8" />
+            >
+              <rect width="24" height="3" fill="#9E9AA8" />
               <rect y="9" width="24" height="3" fill="#9E9AA8" />
               <rect y="18" width="24" height="3" fill="#9E9AA8" />
             </svg>
@@ -79,11 +80,16 @@
       <section class="shorter-links-section">
         <form action="" class="shorter-links__form">
           <img src="./images/bg-shorten-mobile.svg" alt="" />
-          <input
-            type="text"
-            class="input"
-            placeholder="Shorten a link here..."
-          />
+          <div>
+            <input
+              id="input-link"
+              type="text"
+              class="input no-link"
+              placeholder="Shorten a link here..."
+            />
+            <span class="no-link__message">Please add a link</span>
+          </div>
+
           <button class="btn btn--primary btn--squared">Shorten It!</button>
         </form>
       </section>
@@ -126,6 +132,7 @@
             statistics dashboard.
           </p>
           <div class="card__container">
+            <hr class="card__vertical-line" />
             <article class="card">
               <div class="card__content">
                 <div class="card__info">

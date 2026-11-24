@@ -284,7 +284,9 @@ hr {
 .input {
   display: flex;
   height: 48px;
+  width: 100%;
   padding: var(--spacing-0) var(--spacing-200);
+  margin: 0 0 6px 0;
   align-items: center;
   gap: var(--spacing-0);
   align-self: stretch;
@@ -297,7 +299,21 @@ hr {
   font-style: normal;
   font-weight: 500;
   line-height: 175%; /* 26.25px */
+  
+}
+
+.no-link {
+  border: 4px solid var(--colors-red);
+}
+
+.no-link__message {
+  color: var(--colors-red);
+  font-size: 14px;
+}
+
+div:has(input) {
   z-index: 5;
+  width: 100%;
 }
 
 .shorter-links-section {
@@ -379,6 +395,8 @@ hr {
   align-items: center;
 
   gap: var(--spacing-700);
+
+  position: relative;
 }
 
 .title--card {
@@ -410,6 +428,16 @@ hr {
   padding: 0 12px;
   align-items: center;
   gap: 10px;
+}
+
+.card__vertical-line {
+  margin: 0;
+  width: 600px;
+  background: var(--colors-blue-400);
+  border: 2px solid var(--colors-blue-400);
+  opacity: 1;
+  transform: rotate(90deg);
+  position: absolute;
 }
 
 .card__content {
@@ -618,7 +646,7 @@ hr {
   align-items: center;
   gap: var(--spacing-100, 8px);
 
-  hr{
+  hr {
     width: 100%;
   }
 }
